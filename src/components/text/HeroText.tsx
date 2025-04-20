@@ -7,9 +7,10 @@ interface Props {
   children: ReactNode;
   className: string;
   styles?: React.CSSProperties;
+  ref?: any;
 }
 
-export default function HeroText({ children, className, styles }: Props) {
+export default function HeroText({ children, className, styles, ref }: Props) {
   //   useGSAP(() => {
   //     gsap.from(".letter", {
   //       fontSize: 0,
@@ -28,11 +29,7 @@ export default function HeroText({ children, className, styles }: Props) {
   //   ));
 
   return (
-    <div
-      className={`${className} tracking-in-contract-bck`}
-      //   style={{ color: "rgb(117, 74, 153)" }}
-      style={styles}
-    >
+    <div ref={ref} className={`${className}`} style={styles}>
       {children}
     </div>
   );
