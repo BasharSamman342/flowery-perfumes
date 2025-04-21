@@ -1,4 +1,3 @@
-import { useInView } from "react-intersection-observer";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -10,14 +9,9 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
-  const { ref, inView } = useInView({
-    threshold: 0,
-    rootMargin: "-50px 0px 0px 0px",
-    triggerOnce: false,
-  });
   return (
     <div className="h-[65vh] relative mt-24 border-t-2 border-gray-300 py-12">
-      <div ref={ref} className=" absolute min-w-full min-h-full py-8">
+      <div className=" absolute min-w-full min-h-full py-8">
         <img
           src="/footer-2.png"
           className="absolute -top-11 z-0  -left-20 w-[30%]"

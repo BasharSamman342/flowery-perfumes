@@ -1,13 +1,10 @@
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import { Card, CardContent } from "@/components/ui/card";
 import TopProductsCard from "./TopProductsCard";
 
 export default function TopProductsSection() {
-  const [animationClass, setAnimationClass] = useState(
-    "tracking-in-contract-bck"
-  );
-  const { ref, inView } = useInView({
+  const [_, setAnimationClass] = useState("tracking-in-contract-bck");
+  const { inView } = useInView({
     threshold: 0,
     rootMargin: "-50px 0px 0px 0px",
     triggerOnce: false,

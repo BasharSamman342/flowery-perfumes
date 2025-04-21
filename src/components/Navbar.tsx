@@ -4,7 +4,6 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { AnimatedText } from "./AnimatedText";
-import { Facebook } from "lucide-react";
 
 export const Navbar = () => {
   return (

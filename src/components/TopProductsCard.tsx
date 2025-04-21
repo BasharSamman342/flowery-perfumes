@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
