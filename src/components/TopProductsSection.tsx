@@ -14,26 +14,14 @@ export default function TopProductsSection() {
   });
   useEffect(() => {
     if (inView) {
-      // setAnimationClass("focus-in-contract-bck");
       setAnimationClass("tracking-in-contract-bck");
     } else {
       setAnimationClass("blur-out-expand-fwd");
     }
-
-    // console.log("inView", inView);
-
-    // if (inView) {
-    //   gsap.from("#flowers-log", {
-    //     rotate: -90,
-    //     duration: 1,
-    //     ease: "power2.out",
-    //   });
-    // }
   }, [inView]);
 
   const topProducts = [
     {
-      // id:""
       title: "Rose Goldea",
       price: "$150",
       image: "/perfume-bottle-1.png",
@@ -43,7 +31,6 @@ export default function TopProductsSection() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reiciendis facere doloremque alias soluta, animi optio fugit molestiae similique necessitatibus modi, dignissimos eos! Ipsa dolorem eligendi maxime omnis aperiam explicabo.",
     },
     {
-      // id:""
       title: "Monique Lhuillier",
       price: "$250",
       image: "/perfume-bottle-3.png",
@@ -54,7 +41,6 @@ export default function TopProductsSection() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reiciendis facere doloremque alias soluta, animi optio fugit molestiae similique necessitatibus modi, dignissimos eos! Ipsa dolorem eligendi maxime omnis aperiam explicabo.",
     },
     {
-      // id:""
       title: "Valentino",
       price: "$350",
       image: "/perfume-bottle-2.png",

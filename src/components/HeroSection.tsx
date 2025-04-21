@@ -19,7 +19,6 @@ function HeroSection() {
   //   Set animation class based on visibility
   useEffect(() => {
     if (inView) {
-      // setAnimationClass("focus-in-contract-bck");
       setAnimationClass("tracking-in-contract-bck");
     } else {
       setAnimationClass("blur-out-expand-fwd");
